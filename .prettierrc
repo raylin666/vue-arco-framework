@@ -1,0 +1,20 @@
+{
+  "tabWidth": 2,
+  "printWidth": 80,
+  "useTabs": false,
+  "semi": false,
+  "singleQuote": true,
+  "TrailingComma": "none",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": true,
+  "arrowParens": "avoid",
+  "quoteProps": "consistent",
+  "useEditorConfig": true,
+  "vueIndentScriptAndStyle": true,
+  "htmlWhitespaceSensitivity": "strict",
+  "overrides": [
+    {
+      "files": ".prettierrc"
+    }
+  ]
+}
