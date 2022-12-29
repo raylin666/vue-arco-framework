@@ -1,4 +1,4 @@
-### Vue 3 + Vite + TypeScript + Arco Design UI 企业级脚手架
+# Vue 3 + Vite + TypeScript + Arco Design UI 企业级脚手架
 
 ```shell
 # 下载模版及启动项目 (会提示输入项目名称[例如`vue-framework`], 选择 Vue 框架, 选择 TypeScript 即可)
