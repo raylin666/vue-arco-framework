@@ -1,4 +1,4 @@
-# Vue 3 + Vite + TypeScript + Arco Design UI 企业级脚手架
+## 🦶👋 🏠 Vue 3 + Vite + TypeScript + Arco Design UI 企业级脚手架
 
 ```shell
 # 下载模版及启动项目 (会提示输入项目名称[例如`vue-framework`], 选择 Vue 框架, 选择 TypeScript 即可)
@@ -825,7 +825,7 @@ import '@/mock'
 
 本教程主要是讲解 << 如何搭建脚手架 >>, 如果您需要自己写一套脚手架就照着本教程的步骤操作就可以了。
 
-当然，你如果看懂本项目, 也可以将代码拉下来直接使用哦 ～
+当然，您如果看懂本项目或者不想重新搭建脚手架, 也可以将代码拉下来直接使用哦 ～
 
 涉及到其他相关的包:
 
