@@ -1,12 +1,15 @@
 import {createRouter, createWebHistory} from 'vue-router'
 
-export const DEFAULT_LAYOUT = () => import('@/layout/basic-layout.vue');
+// 默认布局 (整个内容块)
+export const BASIC_LAYOUT = () => import('@/layout/basic-layout.vue')
+// 侧栏布局 (带有侧边栏内容块)
+export const SIDER_LAYOUT = () => import('@/layout/sider-layout.vue')
 
 const routes = [
     {
         path: '/',
         name: 'index',
-        component: DEFAULT_LAYOUT,
+        component: SIDER_LAYOUT,
         meta: {},
         children: [
             {

@@ -56,12 +56,15 @@ export default defineConfig(({ command, mode }) => {
         },
       }
     },
+    build: {
+      chunkSizeWarningLimit: 2000,
+    },
     css: {
       preprocessorOptions: {
         less: {
           modifyVars: {
             hack: `true; @import (reference) "${resolve(
-                'src/assets/style/breakpoint.less'
+                'src/assets/style/vars.less'
             )}";`,
           },
           javascriptEnabled: true,

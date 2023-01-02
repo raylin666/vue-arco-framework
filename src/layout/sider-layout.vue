@@ -6,7 +6,7 @@
       </a-layout-header>
       <a-layout>
         <a-layout-content>
-          <LayoutContent />
+          <LayoutSiderContent />
         </a-layout-content>
       </a-layout>
       <a-layout-footer>
@@ -19,7 +19,7 @@
 <script lang="ts" setup>
 import {
   LayoutHeader,
-  LayoutContent,
+  LayoutSiderContent,
   LayoutFooter,
 } from '@/components'
 </script>
