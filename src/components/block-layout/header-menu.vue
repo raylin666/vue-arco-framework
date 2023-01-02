@@ -32,7 +32,7 @@
     background-color: #fafafa;
     color: #f77234;
   }
-  :deep(.arco-menu-item):hover {
+  :deep(.arco-menu-item.arco-menu-selected:hover), :deep(.arco-menu-item):hover {
     background-color: var(--color-white);
   }
 }
