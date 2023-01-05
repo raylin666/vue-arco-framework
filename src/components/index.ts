@@ -8,6 +8,7 @@ import BlockLayoutLogo from '@/components/block-layout/logo.vue'
 import BlockLayoutHeaderMenu from '@/components/block-layout/header-menu.vue'
 import BlockLayoutHeaderSearch from '@/components/block-layout/header-search.vue'
 import BlockLayoutSiderNew from '@/components/block-layout/sider-new.vue'
+import BlockLayoutSiderSign from '@/components/block-layout/sider-sign.vue'
 
 import CardListItem from '@/components/card/list-item.vue'
 
@@ -22,6 +23,7 @@ export {
     BlockLayoutHeaderMenu,
     BlockLayoutHeaderSearch,
     BlockLayoutSiderNew,
+    BlockLayoutSiderSign,
 
     CardListItem,
 }

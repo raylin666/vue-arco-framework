@@ -8,10 +8,8 @@
         <a-col :span="21" class="title">
           PHP 8.2 对 WordPress、插件和开发人员意味着什么？
         </a-col>
-      </a-row>
-      <a-row style="margin-bottom: 10px;">
         <a-col :span="20">
-          <span class="zan">293 人点赞过</span>
+          <span class="zan" style="color: #f53f3f">293 人点赞过</span>
         </a-col>
         <a-col :span="4" class="date">
           <a-tag color="lime">3周前</a-tag>
@@ -26,10 +24,8 @@
         <a-col :span="21" class="title">
           PHP 8.2 对 WordPress、插件和开发人员意味着什么？
         </a-col>
-      </a-row>
-      <a-row style="margin-bottom: 10px;">
         <a-col :span="20">
-          <span class="zan">293 人点赞过</span>
+          <span class="zan" style="color: #eb0aa4">293 人点赞过</span>
         </a-col>
         <a-col :span="4" class="date">
           <a-tag color="lime">3周前</a-tag>
@@ -44,10 +40,8 @@
         <a-col :span="21" class="title">
           PHP 8.2 对 WordPress、插件和开发人员意味着什么？
         </a-col>
-      </a-row>
-      <a-row style="margin-bottom: 10px;">
         <a-col :span="20">
-          <span class="zan">293 人点赞过</span>
+          <span class="zan" style="color: #ff7d00">293 人点赞过</span>
         </a-col>
         <a-col :span="4" class="date">
           <a-tag color="lime">3周前</a-tag>
@@ -62,10 +56,8 @@
         <a-col :span="21" class="title">
           PHP 8.2 对 WordPress、插件和开发人员意味着什么？
         </a-col>
-      </a-row>
-      <a-row style="margin-bottom: 10px;">
         <a-col :span="20">
-          <span class="zan">293 人点赞过</span>
+          <span class="zan" style="color: #7816ff">293 人点赞过</span>
         </a-col>
         <a-col :span="4" class="date">
           <a-tag color="lime">3周前</a-tag>
@@ -78,12 +70,10 @@
           <a-tag color="#00b42a">5</a-tag>
         </a-col>
         <a-col :span="21" class="title">
-          PHP 8.2 对 WordPress、插件和开发人员意味着什么？
+          PHP 8.2 对 插件和开发人员意味着什么 WordPress、插件和开发人员意味着什么？
         </a-col>
-      </a-row>
-      <a-row style="margin-bottom: 10px;">
         <a-col :span="20">
-          <span class="zan">293 人点赞过</span>
+          <span class="zan" style="color:#00b42a;">293 人点赞过</span>
         </a-col>
         <a-col :span="4" class="date">
           <a-tag color="lime">3周前</a-tag>
@@ -97,13 +87,18 @@
 
 <style lang="less" scoped>
 .item {
+  margin-bottom: 10px;
   .title {
-    height: 60px;
+    margin-bottom: 10px;
     line-height: 24px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
   .zan {
     font-size: 12px;
-    color: dodgerblue;
+    text-shadow: 0 1px 0 #ccc;
   }
   .date {
     float: right;

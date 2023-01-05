@@ -8,6 +8,11 @@
         <div class="title">
           PHP 8.2 对 WordPress、插件和开发人员意味着什么？
         </div>
+        <div style="float: left">
+          <a-space>
+            <a-tag color="lime">3周前</a-tag>
+          </a-space>
+        </div>
         <div class="tag">
           <a-space>
             <a-tag color="green">PHP</a-tag>
@@ -26,13 +31,13 @@
                 <a-avatar :size="20">
                   <img alt="avatar" src="https://p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/3ee5f13fb09879ecb5185e440cef6eb9.png~tplv-uwbnlip3yd-webp.webp" />
                 </a-avatar>
-                <span class="username">林山</span>
+                <span class="username"><a-tag color="rgb(251 251 251)">林山</a-tag></span>
               </a-space>
             </a-col>
             <a-col :span="12">
-              <a-space size="large" style="float: right;">
+              <a-space size="large" style="float: right; margin-top: 8px;">
                 <div>
-                  2周前
+                  <IconThumbUp /> 23
                 </div>
                 <div>
                   <IconHeart /> 10
@@ -53,7 +58,7 @@
 </template>
 
 <script setup lang="ts">
-import { IconHeart, IconEye, IconMessage } from '@arco-design/web-vue/es/icon'
+import { IconThumbUp, IconHeart, IconEye, IconMessage } from '@arco-design/web-vue/es/icon'
 </script>
 
 <style lang="less" scoped>
@@ -83,8 +88,18 @@ import { IconHeart, IconEye, IconMessage } from '@arco-design/web-vue/es/icon'
   .action {
     color: #9c9999;
     .username {
-      margin-left: -18px;
+      margin-left: -44px;
+      padding-left: 24px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
       font-size: 14px;
+      :deep(.arco-tag) {
+        background-image: linear-gradient(to right, #e9e9e9, #a6a6f4, #a8b0ff);
+        color: #ffffff;
+        font-weight: 400;
+        border-radius: 10px;
+        border: none;
+      }
     }
   }
 }

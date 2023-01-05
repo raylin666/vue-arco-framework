@@ -1,5 +1,11 @@
 <template>
   <div class="sider">
+    <a-row style="margin-bottom: 15px;">
+      <a-col :span="1"></a-col>
+      <a-col :span="23">
+        <BlockLayoutSiderSign />
+      </a-col>
+    </a-row>
     <a-row>
       <a-col :span="1"></a-col>
       <a-col :span="23">
@@ -11,7 +17,8 @@
 
 <script setup lang="ts">
 import {
-  BlockLayoutSiderNew
+  BlockLayoutSiderNew,
+  BlockLayoutSiderSign,
 } from '@/components'
 </script>
 
