@@ -86,12 +86,8 @@ const props = defineProps({
     type: String,
     default: '连续签到',
   },
-  todaySignList: {
-    type: Array as PropType<todaySignListItem[]> | undefined,
-  },
-  continuitySignList: {
-    type: Array as PropType<continuitySignListItem[]> | undefined,
-  },
+  todaySignList: Array as PropType<todaySignListItem[]>,
+  continuitySignList: Array as PropType<continuitySignListItem[]>,
 })
 </script>
 
