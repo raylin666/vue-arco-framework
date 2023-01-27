@@ -6,7 +6,9 @@
           <BlockLayoutLogo />
         </a-col>
         <a-col :span="8">
-          <BlockLayoutHeaderMenu />
+          <BlockLayoutHeaderMenu
+           :list="headerMenuList"
+           />
         </a-col>
         <a-col :span="7">
           <BlockLayoutHeaderSearch />
@@ -17,11 +19,43 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import {
   BlockLayoutLogo,
   BlockLayoutHeaderMenu,
   BlockLayoutHeaderSearch,
 } from '@/components'
+import { headerMenu } from '@/types/components/menu'
+
+const headerMenuList = computed<headerMenu[]>(() => [
+  {
+    title: '首页',
+    name: 'home',
+  },
+  {
+    title: '快讯',
+    name: 'kuaiXun',
+  },
+  {
+    title: '专题',
+    name: 'zhuanTi',
+  },
+  {
+    title: '商城',
+    name: 'shangCheng',
+  },
+  {
+    title: '导航',
+    name: 'daoHang',
+  },
+  {
+    title: '圈子',
+    name: 'quanZi',
+    isBadge: true,
+    badgeText: '交流',
+    badgeBg: 'blue',
+  },
+])
 </script>
 
 <style lang="less" scoped>
