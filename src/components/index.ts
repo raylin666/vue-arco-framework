@@ -5,12 +5,12 @@ import LayoutSiderContent from '@/components/layout/sider-content.vue'
 import LayoutFooter from '@/components/layout/footer.vue'
 
 import BlockLayoutLogo from '@/components/block-layout/logo.vue'
-import BlockLayoutHeaderMenu from '@/components/block-layout/header-menu.vue'
-import BlockLayoutHeaderSearch from '@/components/block-layout/header-search.vue'
-import BlockLayoutSiderNew from '@/components/block-layout/sider-new.vue'
-import BlockLayoutSiderSign from '@/components/block-layout/sider-sign.vue'
+import BlockLayoutHeaderMenu from '@/components/block-layout/header/menu.vue'
+import BlockLayoutHeaderSearch from '@/components/block-layout/header/search.vue'
+import BlockLayoutSiderNew from '@/components/block-layout/sider/new.vue'
+import BlockLayoutSiderSign from '@/components/block-layout/sider/sign.vue'
 
-import CardArticleListItem from '@/components/card/article-list-item.vue'
+import CardArticleListItem from '@/components/list-item/article/index.vue'
 
 export {
     LayoutHeader,

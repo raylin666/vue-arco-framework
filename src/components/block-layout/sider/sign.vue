@@ -67,7 +67,7 @@
 <script setup lang="ts">
 import { IconGift, IconLayers } from '@arco-design/web-vue/es/icon'
 import { todaySignListItem, continuitySignListItem } from '@/types/components/sider'
-import { PropType } from "vue";
+import { PropType } from 'vue'
 
 const props = defineProps({
   title: {

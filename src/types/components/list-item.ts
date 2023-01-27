@@ -1,5 +1,8 @@
 import { tagsItem } from "../other";
 
+/**
+ * 首页文章列表接口
+ */
 export interface indexArticleListItem {
     cover: string;
     title: string;

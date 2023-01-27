@@ -12,7 +12,9 @@
     <a-row>
       <a-col :span="1"></a-col>
       <a-col :span="23">
-        <BlockLayoutSiderNew />
+        <BlockLayoutSiderNew
+         :list="newArticleList"
+         />
       </a-col>
     </a-row>
   </div>
@@ -24,7 +26,7 @@ import {
   BlockLayoutSiderNew,
   BlockLayoutSiderSign,
 } from '@/components'
-import { todaySignListItem, continuitySignListItem } from '@/types/components/sider'
+import { todaySignListItem, continuitySignListItem, newArticleListItem } from '@/types/components/sider'
 
 const todaySignList = computed<todaySignListItem[]>(() => [
   {
@@ -89,7 +91,35 @@ const continuitySignList = computed<continuitySignListItem[]>(() => [
     avatar: 'http://blog.ls331.com/medias/logo.svg',
     time: '20小时前',
     signDay: 30,
-  }
+  },
+])
+
+const newArticleList = computed<newArticleListItem[]>(() => [
+  {
+    title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
+    zanCount: 293,
+    time: '3周前',
+  },
+  {
+    title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
+    zanCount: 293,
+    time: '3周前',
+  },
+  {
+    title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
+    zanCount: 293,
+    time: '3周前',
+  },
+  {
+    title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
+    zanCount: 293,
+    time: '3周前',
+  },
+  {
+    title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
+    zanCount: 293,
+    time: '3周前',
+  },
 ])
 </script>
 
