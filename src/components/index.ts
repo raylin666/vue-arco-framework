@@ -9,6 +9,7 @@ import BlockLayoutHeaderMenu from '@/components/block-layout/header/menu.vue'
 import BlockLayoutHeaderSearch from '@/components/block-layout/header/search.vue'
 import BlockLayoutSiderNew from '@/components/block-layout/sider/new.vue'
 import BlockLayoutSiderSign from '@/components/block-layout/sider/sign.vue'
+import BlockLayoutFooter from '@/components/block-layout/footer.vue'
 
 import CardArticleListItem from '@/components/list-item/article/index.vue'
 
@@ -24,6 +25,7 @@ export {
     BlockLayoutHeaderSearch,
     BlockLayoutSiderNew,
     BlockLayoutSiderSign,
+    BlockLayoutFooter,
 
     CardArticleListItem,
 }

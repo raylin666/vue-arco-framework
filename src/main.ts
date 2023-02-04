@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import 'assets/style/global.less'
-import '@arco-design/web-vue/dist/arco.less';
+import '@arco-design/web-vue/dist/arco.less'
 import App from '@/App.vue'
 import router from '@/router'
 import store from '@/store'
