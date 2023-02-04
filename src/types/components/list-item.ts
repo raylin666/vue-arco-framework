@@ -1,9 +1,10 @@
 import { tagsItem } from "../other";
 
 /**
- * 首页文章列表接口
+ * 文章列表接口
  */
-export interface indexArticleListItem {
+export interface articleListItem {
+    id: number;
     cover: string;
     title: string;
     time: string;

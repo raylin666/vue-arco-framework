@@ -11,11 +11,24 @@ const routes = [
         name: 'index',
         component: SIDER_LAYOUT,
         meta: {},
+        redirect: 'article',
+    },
+    {
+        path: '/article',
+        name: 'article',
+        component: SIDER_LAYOUT,
+        meta: {},
         children: [
             {
                 path: '',
-                name: 'index',
-                component: () => import('@/views/index/index.vue'),
+                name: 'article',
+                component: () => import('@/views/article/index.vue'),
+                meta: {},
+            },
+            {
+                path: 'info/:id',
+                name: 'articleInfo',
+                component: () => import('@/views/article/info.vue'),
                 meta: {},
             },
         ],

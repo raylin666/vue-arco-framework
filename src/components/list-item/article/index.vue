@@ -6,7 +6,7 @@
     <a-col :span="16">
       <div class="info">
         <div class="title">
-          {{ listItem?.title }}
+          <router-link :to="{ name: 'articleInfo', params: { id: listItem?.id } }">{{ listItem?.title }}</router-link>
         </div>
         <div style="float: left">
           <a-space>
@@ -58,18 +58,18 @@
 
 <script setup lang="ts">
 import { IconThumbUp, IconHeart, IconEye, IconMessage } from '@arco-design/web-vue/es/icon'
-import { indexArticleListItem } from '@/types/components/list-item'
+import { articleListItem } from '@/types/components/list-item'
 import { PropType } from 'vue'
 
 const props = defineProps({
-  listItem: Object as PropType<indexArticleListItem>,
+  listItem: Object as PropType<articleListItem>,
 })
 </script>
 
 <style lang="less" scoped>
 .info {
   padding-left: 20px;
-  .title {
+  .title, a {
     color: #2b2b2b;
     font-size: 18px;
     font-weight: 420;

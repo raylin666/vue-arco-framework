@@ -15,10 +15,11 @@ import { computed } from 'vue'
 import {
   CardArticleListItem,
 } from '@/components'
-import { indexArticleListItem } from '@/types/components/list-item'
+import { articleListItem } from '@/types/components/list-item'
 
-const listItem = computed<indexArticleListItem[]>(() => [
+const listItem = computed<articleListItem[]>(() => [
   {
+    id: 1,
     cover: 'https://p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/a8c8cdb109cb051163646151a4a5083b.png~tplv-uwbnlip3yd-webp.webp',
     title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
     time: '3周前',
@@ -36,6 +37,7 @@ const listItem = computed<indexArticleListItem[]>(() => [
     viewCount: 3928,
   },
   {
+    id: 2,
     cover: 'https://p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/a8c8cdb109cb051163646151a4a5083b.png~tplv-uwbnlip3yd-webp.webp',
     title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
     time: '3周前',
@@ -53,6 +55,7 @@ const listItem = computed<indexArticleListItem[]>(() => [
     viewCount: 3928,
   },
   {
+    id: 3,
     cover: 'https://p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/a8c8cdb109cb051163646151a4a5083b.png~tplv-uwbnlip3yd-webp.webp',
     title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
     time: '3周前',
@@ -70,6 +73,7 @@ const listItem = computed<indexArticleListItem[]>(() => [
     viewCount: 3928,
   },
   {
+    id: 4,
     cover: 'https://p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/a8c8cdb109cb051163646151a4a5083b.png~tplv-uwbnlip3yd-webp.webp',
     title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
     time: '3周前',
@@ -87,6 +91,7 @@ const listItem = computed<indexArticleListItem[]>(() => [
     viewCount: 3928,
   },
   {
+    id: 5,
     cover: 'https://p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/a8c8cdb109cb051163646151a4a5083b.png~tplv-uwbnlip3yd-webp.webp',
     title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
     time: '3周前',
@@ -104,6 +109,7 @@ const listItem = computed<indexArticleListItem[]>(() => [
     viewCount: 3928,
   },
   {
+    id: 6,
     cover: 'https://p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/a8c8cdb109cb051163646151a4a5083b.png~tplv-uwbnlip3yd-webp.webp',
     title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
     time: '3周前',
