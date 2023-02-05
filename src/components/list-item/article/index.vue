@@ -71,7 +71,7 @@ const props = defineProps({
   padding-left: 20px;
   .title, a {
     color: transparent;
-    background: linear-gradient(to right, #001fff, #06c7c3, #161516, #b32626);
+    background: linear-gradient(to right, #181819, #2a3231, #8210e9, #000000);
     -webkit-background-clip: text;
     font-size: 18px;
     font-weight: 420;
@@ -93,6 +93,9 @@ const props = defineProps({
   }
   .action {
     color: #9c9999;
+    :deep(.arco-avatar-image) {
+      border-radius: 5px;
+    }
     .username {
       margin-left: -44px;
       padding-left: 24px;
@@ -100,11 +103,13 @@ const props = defineProps({
       border-radius: 10px;
       font-size: 14px;
       :deep(.arco-tag) {
-        background-image: linear-gradient(to right, #e9e9e9, #a6a6f4, #a8b0ff);
+        background-image: linear-gradient(to right, #e9e9e9, #656b9f, #172ca8);
         color: #ffffff;
         font-weight: 400;
-        border-radius: 10px;
+        border-radius: 4px;
         border: none;
+        margin-left: -4px;
+        height: 22px;
       }
     }
   }
