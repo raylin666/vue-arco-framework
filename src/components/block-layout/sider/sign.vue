@@ -94,6 +94,7 @@ const props = defineProps({
 <style lang="less" scoped>
 .title {
   text-align: center;
+  margin-top: 6px;
   span {
     color: transparent;
     background: linear-gradient(to right, #ff002e, #b800dd, #0053e6, #b70065);
@@ -101,7 +102,7 @@ const props = defineProps({
   }
 }
 .banner {
-  margin-top: 16px;
+  margin-top: 19px;
   background-image: url(https://www.wpdaxue.com/wp-content/themes/b2/Assets/fontend/images/page-bg.svg);
   background-color: #ff3657;
   border-radius: 4px;

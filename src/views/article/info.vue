@@ -33,7 +33,7 @@
     <div class="title">
       手把手教你源码编译安装PHP及相关扩展
     </div>
-    <a-divider orientation="right">
+    <a-divider orientation="right" style="margin-top: 25px;">
       <a-tag>正文内容 - 字数 3K</a-tag>
     </a-divider>
     <div class="content">
