@@ -8,10 +8,10 @@
         <a-col :span="21" class="title">
           {{ item.title }}
         </a-col>
-        <a-col :span="20">
+        <a-col :span="20" style="margin-top: 10px;">
           <span class="zan" :style="{color: colors[index]}">{{ item.zanCount }} 人点赞过</span>
         </a-col>
-        <a-col :span="4" class="date">
+        <a-col :span="4" class="date" style="margin-top: 10px;">
           <a-tag color="lime">{{ item.time }}</a-tag>
         </a-col>
       </a-row>
@@ -33,12 +33,11 @@ const props = defineProps({
 .item {
   margin-bottom: 10px;
   .title {
-    margin-bottom: 10px;
     line-height: 24px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
   }
   .zan {
     font-size: 12px;
@@ -48,7 +47,7 @@ const props = defineProps({
     float: right;
   }
   .key-num :deep(.arco-tag) {
-    margin-top: 12px;
+    margin-top: 0;
   }
 }
 </style>

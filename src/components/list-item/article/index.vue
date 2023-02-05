@@ -70,10 +70,11 @@ const props = defineProps({
 .info {
   padding-left: 20px;
   .title, a {
-    color: #2b2b2b;
+    color: transparent;
+    background: linear-gradient(to right, #001fff, #06c7c3, #161516, #b32626);
+    -webkit-background-clip: text;
     font-size: 18px;
     font-weight: 420;
-    text-shadow: 1px 0 1px grey;
     margin-bottom: 14px;
   }
   .tag {

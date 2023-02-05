@@ -96,7 +96,7 @@ const props = defineProps({
   text-align: center;
   span {
     color: transparent;
-    background: linear-gradient(to right, #c000ff, #7d00cb, #ff0000, #0118ff);
+    background: linear-gradient(to right, #ff002e, #b800dd, #0053e6, #b70065);
     -webkit-background-clip: text;
   }
 }
