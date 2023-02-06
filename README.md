@@ -750,12 +750,12 @@ export default instance
 ```ts
 import request from '@/utils/axios/request'
 
-// 请求登录接口
-export function requestLogin(data: any) {
+// 请求用户登录接口
+export function requestUserLogin(params: any) {
     return request({
         url: '/user/login',
         method: 'post',
-        data
+        params
     })
 }
 ```
@@ -765,10 +765,10 @@ export function requestLogin(data: any) {
 ```vue
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import { requestLogin } from '@/api/user'
+import { requestUserLogin } from '@/api/user'
 
 onMounted(() => {
-  requestLogin({ account: 'admin', password: '123456' }).then(res => {
+  requestUserLogin({ account: 'admin', password: '123456' }).then(res => {
     console.log(res)
   })
 })
@@ -789,7 +789,7 @@ npm i mockjs -D
 ```ts
 import Mock from 'mockjs'
 
-Mock.mock('/user/login', 'post', (params: any) => {
+Mock.mock('/user/login', 'post', (data: any) => {
     return {
         data: { token: 'raylin666' },
         status: 200,

@@ -105,9 +105,9 @@ import { IconThumbUp, IconHeart, IconEye, IconMessage } from '@arco-design/web-v
     margin-top: 30px;
     text-shadow: 1px 0 1px grey;
     opacity: 0.9;
-    background-image: url('http://blog.ls331.com/medias/featureimages/40.jpg');
+    background-image: url('http://cdn.ls331.com/storage/blogHomeBackgroundImage2021.jpg');
     background-size: cover;
-    background-position: center center;
+    // background-position: center center;
     border-radius: 10px;
   }
   .content-from {
