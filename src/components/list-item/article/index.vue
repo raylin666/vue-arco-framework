@@ -58,11 +58,11 @@
 
 <script setup lang="ts">
 import { IconThumbUp, IconHeart, IconEye, IconMessage } from '@arco-design/web-vue/es/icon'
-import { articleListItem } from '@/types/components/list-item'
+import { ArticleListItem } from '@/types/components/list-item'
 import { PropType } from 'vue'
 
 const props = defineProps({
-  listItem: Object as PropType<articleListItem>,
+  listItem: Object as PropType<ArticleListItem>,
 })
 </script>
 

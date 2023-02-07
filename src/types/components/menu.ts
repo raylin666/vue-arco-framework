@@ -1,7 +1,7 @@
 /**
  * 头部菜单接口
  */
-export interface headerMenu {
+export interface HeaderMenu {
     title: string;
     name: string;
     isBadge?: boolean;

@@ -6,7 +6,7 @@
       />
       <a-divider />
     </div>
-    <a-pagination :total="200" size="large" show-page-size />
+    <a-pagination :total="listCount" size="large" show-page-size />
   </div>
 </template>
 
@@ -17,13 +17,19 @@ import {
 } from '@/components'
 import { requestArticleList } from '@/api/article'
 
+// 列表数据
 const listItem = ref()
+// 列表数量
+const listCount = ref(0)
+// 分页页码
 const page = 1
+// 分页数量
 const size = 10
 onMounted(() => {
   // 请求文章列表数据
   requestArticleList(page, size).then(response => {
-    listItem.value = response.data
+    listItem.value = response.data.list
+    listCount.value = response.data.count
   })
 })
 </script>

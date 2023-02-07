@@ -66,7 +66,7 @@
 
 <script setup lang="ts">
 import { IconGift, IconLayers } from '@arco-design/web-vue/es/icon'
-import { todaySignListItem, continuitySignListItem } from '@/types/components/sider'
+import { TodaySignListItem, ContinuitySignListItem } from '@/types/components/list-item'
 import { PropType } from 'vue'
 
 const props = defineProps({
@@ -86,8 +86,8 @@ const props = defineProps({
     type: String,
     default: '连续签到',
   },
-  todaySignList: Array as PropType<todaySignListItem[]>,
-  continuitySignList: Array as PropType<continuitySignListItem[]>,
+  todaySignList: Array as PropType<TodaySignListItem[]>,
+  continuitySignList: Array as PropType<ContinuitySignListItem[]>,
 })
 </script>
 

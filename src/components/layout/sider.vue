@@ -21,106 +21,31 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { ref, onMounted } from 'vue'
 import {
   BlockLayoutSiderNew,
   BlockLayoutSiderSign,
 } from '@/components'
-import { todaySignListItem, continuitySignListItem, newArticleListItem } from '@/types/components/sider'
+import { requestNewArticleList } from '@/api/article'
+import { requestSignList } from '@/api/sign'
 
-const todaySignList = computed<todaySignListItem[]>(() => [
-  {
-    nickname: '张三',
-    avatar: 'http://blog.ls331.com/medias/logo.svg',
-    time: '7小时前',
-    count: 30,
-  },
-  {
-    nickname: '太挑剔的鸟儿',
-    avatar: 'http://blog.ls331.com/medias/logo.svg',
-    time: '3天前',
-    count: 30,
-  },
-  {
-    nickname: '马五',
-    avatar: 'http://blog.ls331.com/medias/logo.svg',
-    time: '6天前',
-    count: 30,
-  },
-  {
-    nickname: '小乖乖',
-    avatar: 'http://blog.ls331.com/medias/logo.svg',
-    time: '20分钟前',
-    count: 30,
-  },
-  {
-    nickname: '张林夕',
-    avatar: 'http://blog.ls331.com/medias/logo.svg',
-    time: '12小时前',
-    count: 30,
-  }
-])
-
-const continuitySignList = computed<continuitySignListItem[]>(() => [
-  {
-    nickname: '手放开',
-    avatar: 'http://blog.ls331.com/medias/logo.svg',
-    time: '23小时前',
-    signDay: 30,
-  },
-  {
-    nickname: '冰冰',
-    avatar: 'http://blog.ls331.com/medias/logo.svg',
-    time: '1天前',
-    signDay: 30,
-  },
-  {
-    nickname: '王治郅',
-    avatar: 'http://blog.ls331.com/medias/logo.svg',
-    time: '20天前',
-    signDay: 30,
-  },
-  {
-    nickname: '史可法',
-    avatar: 'http://blog.ls331.com/medias/logo.svg',
-    time: '17小时前',
-    signDay: 30,
-  },
-  {
-    nickname: '杨阳洋',
-    avatar: 'http://blog.ls331.com/medias/logo.svg',
-    time: '20小时前',
-    signDay: 30,
-  },
-])
-
-const newArticleList = computed<newArticleListItem[]>(() => [
-  {
-    title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
-    zanCount: 293,
-    time: '3周前',
-  },
-  {
-    title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
-    zanCount: 293,
-    time: '3周前',
-  },
-  {
-    title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
-    zanCount: 293,
-    time: '3周前',
-  },
-  {
-    title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
-    zanCount: 293,
-    time: '3周前',
-  },
-  {
-    title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
-    zanCount: 293,
-    time: '3周前',
-  },
-])
+// 最新文章列表数据
+const newArticleList = ref()
+// 今日签到列表数据
+const todaySignList = ref()
+// 连续签到列表数据
+const continuitySignList = ref()
+onMounted(() => {
+  // 请求最新文章列表数据
+  requestNewArticleList().then(response => {
+    newArticleList.value = response.data
+  })
+  // 请求签到列表数据
+  requestSignList().then(response => {
+    todaySignList.value = response.data.today
+    continuitySignList.value = response.data.continuity
+  })
+})
 </script>
 
 <style lang="less" scoped>

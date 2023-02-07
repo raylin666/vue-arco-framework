@@ -6,7 +6,7 @@
           <a-tag :color="colors[index]">{{ index + 1 }}</a-tag>
         </a-col>
         <a-col :span="21" class="title">
-          {{ item.title }}
+          <router-link :to="{ name: 'articleInfo', params: { id: item.id } }">{{ item.title }}</router-link>
         </a-col>
         <a-col :span="20" style="margin-top: 10px;">
           <span class="zan" :style="{color: colors[index]}">{{ item.zanCount }} 人点赞过</span>
@@ -20,12 +20,12 @@
 </template>
 
 <script setup lang="ts">
-import { newArticleListItem } from '@/types/components/sider'
+import { NewArticleListItem } from '@/types/components/sider'
 import { PropType } from 'vue'
 
 const colors = ['#f53f3f', '#eb0aa4', '#ff7d00', '#7816ff', '#00b42a']
 const props = defineProps({
-  list: Array as PropType<newArticleListItem[]>,
+  list: Array as PropType<NewArticleListItem[]>,
 })
 </script>
 
@@ -38,6 +38,9 @@ const props = defineProps({
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    a {
+      color: #333333;
+    }
   }
   .zan {
     font-size: 12px;
