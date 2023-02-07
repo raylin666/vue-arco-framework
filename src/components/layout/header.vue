@@ -25,7 +25,7 @@ import {
   BlockLayoutHeaderMenu,
   BlockLayoutHeaderSearch,
 } from '@/components'
-import { headerMenu } from '@/types/components/menu'
+import { headerMenu } from '@/types/menu'
 
 const headerMenuList = computed<headerMenu[]>(() => [
   {

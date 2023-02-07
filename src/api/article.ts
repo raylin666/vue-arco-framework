@@ -1,6 +1,5 @@
 import request from '@/utils/axios/request'
-import { ArticleList } from '@/types/components/list'
-import { NewArticleListItem } from '@/types/components/list-item'
+import { ArticleInfo, ArticleList, NewArticleListItem } from '@/types/article'
 
 // 请求文章列表接口
 export function requestArticleList(page: number, size: number) {
@@ -15,6 +14,14 @@ export function requestArticleList(page: number, size: number) {
 export function requestNewArticleList() {
     return request<NewArticleListItem[]>({
         url: '/article/newList',
+        method: 'get',
+    })
+}
+
+// 请求文章详情接口
+export function requestArticleInfo(id: number) {
+    return request<ArticleInfo>({
+        url: '/article/info/' + id,
         method: 'get',
     })
 }

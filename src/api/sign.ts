@@ -1,5 +1,5 @@
 import request from '@/utils/axios/request'
-import { SignList } from '@/types/components/list'
+import { SignList } from '@/types/list'
 
 // 请求签到列表接口
 export function requestSignList() {

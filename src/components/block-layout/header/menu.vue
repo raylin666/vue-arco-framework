@@ -12,11 +12,11 @@
 </template>
 
 <script setup lang="ts">
-import { headerMenu } from '@/types/components/menu'
+import { HeaderMenu } from '@/types/menu'
 import { PropType } from 'vue'
 
 const props = defineProps({
-  list: Array as PropType<headerMenu[]>,
+  list: Array as PropType<HeaderMenu[]>,
 })
 </script>
 

@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import { NewArticleListItem } from '@/types/components/sider'
+import { NewArticleListItem } from '@/types/article'
 import { PropType } from 'vue'
 
 const colors = ['#f53f3f', '#eb0aa4', '#ff7d00', '#7816ff', '#00b42a']

@@ -30,7 +30,7 @@
                 <a-avatar :size="20">
                   <img alt="avatar" :src="listItem?.avatar" />
                 </a-avatar>
-                <span class="username"><a-tag color="rgb(251 251 251)">{{ listItem?.username }}</a-tag></span>
+                <span class="username"><a-tag color="rgb(251 251 251)">{{ listItem?.author }}</a-tag></span>
               </a-space>
             </a-col>
             <a-col :span="12">
@@ -58,7 +58,7 @@
 
 <script setup lang="ts">
 import { IconThumbUp, IconHeart, IconEye, IconMessage } from '@arco-design/web-vue/es/icon'
-import { ArticleListItem } from '@/types/components/list-item'
+import { ArticleListItem } from '@/types/article'
 import { PropType } from 'vue'
 
 const props = defineProps({
