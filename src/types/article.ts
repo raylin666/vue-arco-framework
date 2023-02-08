@@ -44,6 +44,7 @@ export interface ArticleInfo {
     cover: string;
     title: string;
     time: string;
+    date: string;
     tags?: TagsItem[];
     description: string;
     avatar: string;

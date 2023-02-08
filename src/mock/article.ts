@@ -166,6 +166,7 @@ Mock.mock('/article/info/1', 'get', (data: any) => {
         cover: 'https://p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/a8c8cdb109cb051163646151a4a5083b.png~tplv-uwbnlip3yd-webp.webp',
         title: 'PHP 8.2 对 WordPress、插件和开发人员意味着什么？',
         time: '3周前',
+        date: '2023年02月08日',
         tags: [
           { name: 'PHP', color: 'green' },
           { name: 'JavaScript', color: 'orange' },

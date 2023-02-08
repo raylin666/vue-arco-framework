@@ -28,7 +28,7 @@
       </a-col>
     </a-row>
     <a-divider orientation="center">
-      <a-tag color="magenta">作者 {{ info?.author }} 于 {{ info?.time }} 发布</a-tag>
+      <a-tag color="magenta">作者 {{ info?.author }} 于 {{ info?.time }} - {{ info?.date }} 发布</a-tag>
     </a-divider>
     <div class="title">
       {{ info?.title }}
