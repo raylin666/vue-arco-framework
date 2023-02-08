@@ -60,4 +60,5 @@ export interface ArticleInfo {
     copyrightArticleId: number;
     copyrightLink: string;
     copyrightStatement: string;
+    contentLength?: string;
 }

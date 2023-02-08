@@ -159,7 +159,7 @@ Mock.mock('/article/newList', 'get', (data: any) => {
   }
 })
 
-Mock.mock('/article/info/1', 'get', (data: any) => {
+Mock.mock('/article/info/0', 'get', (data: any) => {
   return {
       data: {
         id: 1,

@@ -34,7 +34,7 @@
       {{ info?.title }}
     </div>
     <a-divider orientation="right" style="margin-top: 25px;">
-      <a-tag>正文内容 - 字数 3K</a-tag>
+      <a-tag>正文内容 - 字数 {{ info?.contentLength }}</a-tag>
     </a-divider>
     <div class="content">
       {{ info?.content }}
@@ -62,16 +62,30 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 import { IconThumbUp, IconHeart, IconEye, IconMessage } from '@arco-design/web-vue/es/icon'
 import { requestArticleInfo } from '@/api/article'
 import { ArticleInfo } from '@/types/article';
+import { isArray } from '@/utils/is';
 
-const id = 1
+const router = useRouter()
+
+const id = ref(0)
 const info = ref<ArticleInfo>()
 onMounted(() => {
+  if (isArray(router.currentRoute.value.params.id)) {
+    id.value = parseInt(router.currentRoute.value.params.id[0])
+  } else {
+    id.value = parseInt(router.currentRoute.value.params.id)
+  }
+
+  // 测试 mock, 默认固定值。请求真实接口地址时需要删除该代码
+  id.value = 0
+
   // 请求文章详情数据
-  requestArticleInfo(id).then(response => {
+  requestArticleInfo(id.value).then(response => {
     info.value = response.data
+    info.value.contentLength = '3K'
   })
 })
 </script>
