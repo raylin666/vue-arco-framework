@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a-alert type="success" banner center>Hello World!</a-alert>
+    <a-alert type="success" banner center>Hello ArcoFramework!</a-alert>
   </div>
 </template>
 

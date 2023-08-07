@@ -3,8 +3,8 @@
     <a-row>
       <a-col :span="4" :offset="10">
         <a-button type="dashed" status="warning" @click="onClick"
-          ><icon-right-circle />&nbsp;点击内容按钮, 点击总次数为
-          <span class="button-count">{{ count }}</span> 次</a-button
+          ><icon-right-circle />&nbsp;&nbsp;点击内容按钮, 点击总次数为
+          &nbsp;<span class="button-count">{{ count }}</span> &nbsp;次</a-button
         >
       </a-col>
     </a-row>

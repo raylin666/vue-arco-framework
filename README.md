@@ -797,7 +797,7 @@ app.mount('#app')
 ```vue
 <template>
   <div>
-    <a-alert type="success" banner center>Hello World!</a-alert>
+    <a-alert type="success" banner center>Hello ArcoFramework!</a-alert>
   </div>
 </template>
 
@@ -831,7 +831,7 @@ app.mount('#app')
   <div style="margin-top: 30px">
     <a-row>
       <a-col :span="4" :offset="11">
-        <a-button type="primary"
+        <a-button type="dashed" status="warning"
           ><icon-right-circle />&nbsp;&nbsp;点击内容按钮</a-button
         >
       </a-col>
@@ -975,8 +975,8 @@ app.use(store)
     <a-row>
       <a-col :span="4" :offset="10">
         <a-button type="dashed" status="warning" @click="onClick"
-          ><icon-right-circle />&nbsp;点击内容按钮, 点击总次数为
-          <span class="button-count">{{ count }}</span> 次</a-button
+          ><icon-right-circle />&nbsp;&nbsp;点击内容按钮, 点击总次数为
+          &nbsp;<span class="button-count">{{ count }}</span> &nbsp;次</a-button
         >
       </a-col>
     </a-row>
@@ -984,8 +984,16 @@ app.use(store)
 </template>
 
 <script setup lang="ts">
+  import { onMounted } from 'vue'
   import { storeToRefs } from 'pinia'
   import { useCounterStore } from '@/store'
+  import { requestUserLogin } from '@/api/user'
+
+  onMounted(() => {
+    requestUserLogin({ account: 'admin', password: '123456' }).then(res => {
+      console.log(res)
+    })
+  })
 
   const store = useCounterStore()
   const { count } = storeToRefs(store)
