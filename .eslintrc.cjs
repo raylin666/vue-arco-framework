@@ -20,6 +20,7 @@ module.exports = {
   },
   plugins: ['vue', '@typescript-eslint'],
   rules: {
+    'prettier/prettier': 1,
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     '@typescript-eslint/no-var-requires': 0, // 解决报错：Require statement not part of import statement.
     'vue/multi-word-component-names': 'off', // 关闭组件命名规则娇艳
